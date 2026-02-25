@@ -1,5 +1,5 @@
 This changelog will be used from now on to document changes in a precise manner, with a list of changes for each setting version.
-Setting versions are documented using the pref `librewolf.cfg.version`, available in about:config.
+Setting versions are documented using the pref `goonfox.cfg.version`, available in about:config.
 # 8.5
 
 * Explicitly disable weather feed in new tab page (ticket #2048)
@@ -7,7 +7,7 @@ Setting versions are documented using the pref `librewolf.cfg.version`, availabl
 
 # 8.4
 
-Changes to librewolf.cfg:
+Changes to goonfox.cfg:
 
 DoH:
 
@@ -16,8 +16,8 @@ DoH:
 
 Other:
 
-* [#69](https://codeberg.org/librewolf/settings/pulls/69) - DNS-over-HTTPS breaks IPv6 preference
-* [#71](https://codeberg.org/librewolf/settings/pulls/71) - initial ML setup
+* [#69](https://codeberg.org/goonfox/settings/pulls/69) - DNS-over-HTTPS breaks IPv6 preference
+* [#71](https://codeberg.org/goonfox/settings/pulls/71) - initial ML setup
 
 To policies.json: 
 
@@ -26,15 +26,15 @@ To policies.json:
 # 8.3
 
 * Enable DoH by default, this caused unanticipated problems.
-* First version by @threadpanic, at Arkenfox v119, ships with LibreWolf v113.0-3.
+* First version by @threadpanic, at Arkenfox v119, ships with Goonfox v113.0-3.
 
 # 8.2
 
-- v7.10 was the last version by @fxbrit, at Arkenfox v119. This version ships with LibreWolf v113.0-1.
+- v7.10 was the last version by @fxbrit, at Arkenfox v119. This version ships with Goonfox v113.0-1.
 
 # 7.10
 
-**base librewolf version**: 122.x
+**base goonfox version**: 122.x
 
 **References**:
 - Disabled the new Fakespot shopping sidebar
@@ -48,11 +48,11 @@ defaultPref("browser.shopping.experience2023.active", false);
 
 # 7.9
 
-**base librewolf version**: 121.x
+**base goonfox version**: 121.x
 
 **References**:
-- Added 4get.ca to the list of default search engines - https://codeberg.org/librewolf/issues/issues/1711
-- Added default list of DoH providers containing Cloudflare and Quad9 - https://codeberg.org/librewolf/issues/issues/1683
+- Added 4get.ca to the list of default search engines - https://codeberg.org/goonfox/issues/issues/1711
+- Added default list of DoH providers containing Cloudflare and Quad9 - https://codeberg.org/goonfox/issues/issues/1683
 
 #### Added preferences
 
@@ -63,7 +63,7 @@ pref("doh-rollout.provider-list", '[{"UIName":"Mozilla Cloudflare","uri":"https:
 # 7.8
 
 
-**base librewolf version**: 119.x - 120.x
+**base goonfox version**: 119.x - 120.x
 
 #### Changed preferences
 
@@ -90,10 +90,10 @@ defaultPref("browser.shopping.experience2023.enabled", false); // Arkenfox user.
 
 # 7.7
 
-**base librewolf version**: 115.x - 118.x
+**base goonfox version**: 115.x - 118.x
 
 **References**:
-- https://gitlab.com/librewolf-community/settings/-/issues/262
+- https://gitlab.com/goonfox-community/settings/-/issues/262
 
 #### Added preferences
 
@@ -104,7 +104,7 @@ defaultPref("extensions.quarantinedDomains.enabled", false);
 
 # 7.6
 
-**base librewolf version**: 111.x - 114.x
+**base goonfox version**: 111.x - 114.x
 
 **References**:
 - the prefs added in the `LOGGING` section are off by default in the official Mozilla builds, so we are just acting like Firefox here;
@@ -118,7 +118,7 @@ defaultPref("browser.contentblocking.report.monitor.enabled", false); // default
 #### Changed preferences
 
 ```
-defaultPref("app.support.baseURL", "https://support.librewolf.net/");
+defaultPref("app.support.baseURL", "https://support.goonfox.net/");
 ```
 
 #### Added preferences
@@ -132,7 +132,7 @@ pref("devtools.console.stdout.chrome", false);
 
 **target commit**: from 71a20c6fff90e7fbcb216f1d644ca1b40b32b8e2 to 6fe09c63cbfb83ebfb6a17f5e624248f2501b97e
 
-**base librewolf version**: 109.x and 110.x
+**base goonfox version**: 109.x and 110.x
 
 **References**:
 
@@ -152,7 +152,7 @@ defaultPref("dom.popup_allowed_events", "click dblclick mousedown pointerdown");
 
 **target commit**: b0d277a77b36e3bcc5c0f7a1b0eca7a54a388d9d
 
-**base librewolf version**: 108.x
+**base goonfox version**: 108.x
 
 **References**:
 
@@ -168,14 +168,14 @@ defaultPref("media.peerconnection.ice.no_host", true); // don't use any private 
 
 **target commit**: from 9395f5c0e061250acbcbcb523d2270d57136d411 to 240e184b785e4e46c09ca6881111f7c2d4d31a3f
 
-**base librewolf version**: 107.x
+**base goonfox version**: 107.x
 
 **References**:
 
 - mixed content is already covered by HTTPS-only-mode;
 - [dom.disable_beforeunload is no longer necessary](https://github.com/arkenfox/user.js/issues/1575);
-- [beacon API is fine](https://gitlab.com/librewolf-community/settings/-/issues/229);
-- [Firefox Vew pref was removed in previous commit](https://gitlab.com/librewolf-community/settings/-/commit/9395f5c0e061250acbcbcb523d2270d57136d411), adding reference to the changelog;
+- [beacon API is fine](https://gitlab.com/goonfox-community/settings/-/issues/229);
+- [Firefox Vew pref was removed in previous commit](https://gitlab.com/goonfox-community/settings/-/commit/9395f5c0e061250acbcbcb523d2270d57136d411), adding reference to the changelog;
 
 #### Removed preferences
 
@@ -191,11 +191,11 @@ pref("beacon.enabled", false);
 
 **target commit**: from 7211e954b82da3cde5c5cf2d613fe1f84288e635 to eb51b4785e5b67fc388bcbd06a8324d5a54f5850
 
-**base librewolf version**: 106.x
+**base goonfox version**: 106.x
 
 **References**:
 
-- hide Firefox View til reviewed, see https://gitlab.com/librewolf-community/browser/source/-/issues/78;
+- hide Firefox View til reviewed, see https://gitlab.com/goonfox-community/browser/source/-/issues/78;
 - hotfix for syntax error;
 
 #### Removed preferences
@@ -214,11 +214,11 @@ defaultPref("browser.tabs.firefox-view", false);
 
 **target commit**: 33e1ec1cb97d1f16a696057fe9007ae8391def6b
 
-**base librewolf version**: 106.x
+**base goonfox version**: 106.x
 
 **References**:
 
-- change most `lockPref()` to `pref()` or `defaultPref()`, see https://gitlab.com/librewolf-community/settings/-/issues/204;
+- change most `lockPref()` to `pref()` or `defaultPref()`, see https://gitlab.com/goonfox-community/settings/-/issues/204;
 - offline autodetection is mature enough and it is used by some APIs;
 - if someone wants to get the mozilla extension for USB debugging, that's fine.
 
@@ -233,7 +233,7 @@ defaultPref("devtools.chrome.enabled", false); // default
 
 **target commit**: from ed9334d258d20830deafe1a02b87b0cea678236d to 1bdfd333e31c3d119c0bf5506a56b2026ead3583
 
-**base librewolf version**: 105.x
+**base goonfox version**: 105.x
 
 **References**:
 
@@ -243,7 +243,7 @@ defaultPref("devtools.chrome.enabled", false); // default
 - remove a bunch of default prefs that have been that way for the longest;
 - offer accessibility by default;
 - remove hardcore svg security pref since CVEs are very old and irrelevant, see [this discussion](https://github.com/arkenfox/user.js/issues/1529);
-- improve [autoplay behavior](https://gitlab.com/librewolf-community/settings/-/issues/213).
+- improve [autoplay behavior](https://gitlab.com/goonfox-community/settings/-/issues/213).
 
 #### Added preferences
 ```
@@ -275,7 +275,7 @@ defaultPref("media.autoplay.blocking_policy", 2);
 
 **target commit**: 49a705f835e1438372fbdf1a779fbc5846212a68
 
-**base librewolf version**: 104.x
+**base goonfox version**: 104.x
 
 **References**:
 - autofill prefs have been replaced in a migration, we now only keep the bare minimum;
@@ -293,7 +293,7 @@ defaultPref("extensions.formautofill.heuristics.enabled", false);
 
 **target commit**: 381cbed42c98d2376faf7e4ec449623bb99b0be1
 
-**base librewolf version**: 103.x
+**base goonfox version**: 103.x
 
 **References**:
 - [geoclue](https://github.com/arkenfox/user.js/issues/1504);
@@ -312,12 +312,12 @@ defaultPref("network.cookie.cookieBehavior", 5); // default
 
 **target commit**: from e505ddbf0242aec1017a565a74ff9ff5aa458fe5 to 02212c3f44e7aa68b22c8febd9158580d7e4b74f
 
-**base librewolf version**: 103.x
+**base goonfox version**: 103.x
 
 **References**:
-- the cookie lifetime policy pref has been deprecated, see https://gitlab.com/librewolf-community/settings/-/issues/199;
-- stop disabling IPv6, see https://gitlab.com/librewolf-community/settings/-/issues/96;
-- discussion about domain guessing is available at https://gitlab.com/librewolf-community/settings/-/issues/197.
+- the cookie lifetime policy pref has been deprecated, see https://gitlab.com/goonfox-community/settings/-/issues/199;
+- stop disabling IPv6, see https://gitlab.com/goonfox-community/settings/-/issues/96;
+- discussion about domain guessing is available at https://gitlab.com/goonfox-community/settings/-/issues/197.
 
 #### Removed preferences
 ```
@@ -334,14 +334,14 @@ defaultPref("browser.fixup.alternate.enabled", false); // default v104+
 
 **target commit**: from bc16f4f14185e8791d819a69b7d798082ace67f8 to c983fcc8bea8fab31265bc345217b59ce5128de2
 
-**base librewolf version**: 102.x
+**base goonfox version**: 102.x
 
 **References**:
 - sha1 certificates: https://bugzilla.mozilla.org/1767489 and https://bugzilla.mozilla.org/1766687.
 - trimming only applies to http websites so it's very minimal.
 - crlite: https://bugzilla.mozilla.org/show_bug.cgi?id=1773371, we can stick to default 3 till v103, then the value will be changed to 2 which is the best possible if mozilla feels like it's ready usability wise.
 - add more entries to the native query stripping list, to [get in line with brave](https://github.com/brave/brave-core/blob/master/browser/net/brave_site_hacks_network_delegate_helper.cc).
-- `services.settings.server` can now be used as a pref, see: https://gitlab.com/librewolf-community/browser/source/-/merge_requests/37
+- `services.settings.server` can now be used as a pref, see: https://gitlab.com/goonfox-community/browser/source/-/merge_requests/37
 
 #### Added preferences
 ```
@@ -365,7 +365,7 @@ defaultPref("privacy.query_stripping.strip_list", "__hsfp __hssc __hstc __s _hse
 
 **target commit**: b10dcbdd84e63787c4f2f6d34d41724b437df5be
 
-**base librewolf version**: 101.x
+**base goonfox version**: 101.x
 
 **References**:
 - query stripping is now [part of strict mode](https://hg.mozilla.org/mozilla-central/rev/9d9425eb1ded).
@@ -384,7 +384,7 @@ defaultPref("fission.autostart", true);
 
 **target commit**: eea09ca07333dc166213fa9c873e4916d979e97f
 
-**base librewolf version**: 100.x
+**base goonfox version**: 100.x
 
 **References**:
 - hide Firefox Focus promo in private tabs.
@@ -411,7 +411,7 @@ defaultPref("privacy.clearOnShutdown.cookies", false);
 
 **target commit**: e84fc950bfd7c3542cb974e9d545b9b8e18c010d
 
-**base librewolf version**: 99.x
+**base goonfox version**: 99.x
 
 **References**:
 - Fixes the uBlock Origin installation URL
@@ -420,7 +420,7 @@ defaultPref("privacy.clearOnShutdown.cookies", false);
 
 **target commit**: ac95f5195ed82ca6bcec48acf9d1241e3c683b25
 
-**base librewolf version**: 99.x
+**base goonfox version**: 99.x
 
 **References**:
 - vpn pref was set to the wrong value by mistake.
@@ -440,7 +440,7 @@ lockPref("browser.vpn_promo.enabled", false);
 
 **target commit**: 465257e5993893cd7896ef1533d37e245f206fb9
 
-**base librewolf version**: 99.x
+**base goonfox version**: 99.x
 
 **References**:
 - csp pref has been deprecated.
@@ -473,12 +473,12 @@ pref("browser.urlbar.quicksuggest.enabled", false);
 
 **target commit**: 0822d491d2b377b5cd7f0429cee5aa916538fa50
 
-**base librewolf version**: 98.x
+**base goonfox version**: 98.x
 
 **References**:
-- we are going to force history to custom mode and hide the UI for always on PB mode, a bunch of pointers are collected in [this MR](https://gitlab.com/librewolf-community/browser/source/-/merge_requests/21).
+- we are going to force history to custom mode and hide the UI for always on PB mode, a bunch of pointers are collected in [this MR](https://gitlab.com/goonfox-community/browser/source/-/merge_requests/21).
 - [handlers prefs are deprecated](https://bugzilla.mozilla.org/show_bug.cgi?id=1733497).
-- for OCSP see [this issue](https://gitlab.com/librewolf-community/settings/-/issues/150).
+- for OCSP see [this issue](https://gitlab.com/goonfox-community/settings/-/issues/150).
 
 #### Added preferences
 ```
@@ -512,13 +512,13 @@ defaultPref("security.OCSP.enabled", 1);
 
 **target commit**: 0fc1ff53c99379d9d4625de65ea51287d57a0a3a
 
-**base librewolf version**: 97.x
+**base goonfox version**: 97.x
 
 **References**:
 - showing the insecure connection text is redundant as there's already the lock UI for http websites.
 - `browser.places.speculativeConnect.enabled` controls speculative connections for bookmarks and will be fully effective only once we hit v98.
-- we will no longer disable history but we'll clear it on close. [reasoning](https://gitlab.com/librewolf-community/settings/-/issues/135).
-- [download annoyances](https://gitlab.com/librewolf-community/settings/-/issues/144).
+- we will no longer disable history but we'll clear it on close. [reasoning](https://gitlab.com/goonfox-community/settings/-/issues/135).
+- [download annoyances](https://gitlab.com/goonfox-community/settings/-/issues/144).
 
 **Notes**: the settings have been re-organized and they should also be documented a bit better now.
 
@@ -543,15 +543,15 @@ pref("security.tls.version.enable-deprecated", false); // make TLS downgrades se
 
 **target commit**:
 
-**base librewolf version**: 96.x
+**base goonfox version**: 96.x
 
 **References**:
-- [serve custom uBO assets](https://gitlab.com/librewolf-community/settings/-/issues/134)
+- [serve custom uBO assets](https://gitlab.com/goonfox-community/settings/-/issues/134)
 
 
 #### Added preferences
 ```
-defaultPref("librewolf.uBO.assetsBootstrapLocation", "https://gitlab.com/librewolf-community/browser/source/-/raw/main/assets/uBOAssets.json");
+defaultPref("goonfox.uBO.assetsBootstrapLocation", "https://gitlab.com/goonfox-community/browser/source/-/raw/main/assets/uBOAssets.json");
 ```
 
 #### Changed preferences
@@ -563,11 +563,11 @@ defaultPref("privacy.query_stripping.strip_list", "__hsfp __hssc __hstc __s _hse
 
 **target commit**: c256656f377d3c15a8c7537c65f45dc802904df7
 
-**base librewolf version**: 96.x
+**base goonfox version**: 96.x
 
 **References**:
-- [disable sync differently](https://gitlab.com/librewolf-community/settings/-/issues/132);
-- [remove tracking query params](https://gitlab.com/librewolf-community/settings/-/issues/128);
+- [disable sync differently](https://gitlab.com/goonfox-community/settings/-/issues/132);
+- [remove tracking query params](https://gitlab.com/goonfox-community/settings/-/issues/128);
 
 
 #### Added preferences
@@ -581,10 +581,10 @@ defaultPref("privacy.query_stripping.strip_list", "__hsfp __hssc __hstc __s _hse
 
 **target commit**: f3b4414d30953d1ea3eb64a9d75c62c242ee991b
 
-**base librewolf version**: 96.x
+**base goonfox version**: 96.x
 
 **References**:
-- [fix console issue](https://gitlab.com/librewolf-community/settings/-/issues/129)
+- [fix console issue](https://gitlab.com/goonfox-community/settings/-/issues/129)
 
 #### Added preferences
 ```
@@ -595,10 +595,10 @@ defaultPref("devtools.selfxss.count", 0);
 
 **target commit**: f28b218e97acec8935c0c868863a9f4b6a061a39 and 60221803c46bf5cf2cbc5d77035927f9fd249e6a
 
-**base librewolf version**: 96.x
+**base goonfox version**: 96.x
 
 **References**:
-- [fix language issue](https://gitlab.com/librewolf-community/settings/-/issues/125)
+- [fix language issue](https://gitlab.com/goonfox-community/settings/-/issues/125)
 
 #### Added preferences
 ```
@@ -622,12 +622,12 @@ pref("javascript.use_us_english_locale", true);
 
 **target commit**: from 8a98176400e2e44ae1138ea8bdc1991250f75b8e to b219a75b4a0d72b519ce386406f45acead940c9a
 
-**base librewolf version**: 96.x
+**base goonfox version**: 96.x
 
 **References**:
-- [extension auto-updates](https://gitlab.com/librewolf-community/settings/-/issues/116)
-- [remove all the OS specific prefs](https://gitlab.com/librewolf-community/settings/-/issues/124)
-- [service workers and push](https://gitlab.com/librewolf-community/settings/-/issues/115)
+- [extension auto-updates](https://gitlab.com/goonfox-community/settings/-/issues/116)
+- [remove all the OS specific prefs](https://gitlab.com/goonfox-community/settings/-/issues/124)
+- [service workers and push](https://gitlab.com/goonfox-community/settings/-/issues/115)
 
 #### Added preferences
 ```
@@ -642,7 +642,7 @@ defaultPref("browser.tabs.loadBookmarksInTabs", true);
 defaultPref("clipboard.autocopy", false);
 defaultPref("dom.popup_maximum", 4);
 defaultPref("general.autoScroll", false);
-defaultPref("devtools.selfxss.count", 0); // was set because of https://gitlab.com/librewolf-community/browser/linux/-/issues/80
+defaultPref("devtools.selfxss.count", 0); // was set because of https://gitlab.com/goonfox-community/browser/linux/-/issues/80
 defaultPref("dom.push.enabled", false); // disable push notifications
 defaultPref("dom.push.serverURL", ""); // default "wss://push.services.mozilla.com/"
 defaultPref("dom.serviceWorkers.enabled", false); // disable service workers, must enable for push notifications
@@ -652,15 +652,15 @@ defaultPref("dom.serviceWorkers.enabled", false); // disable service workers, mu
 
 **target commit**: 9003f029f8fe087cde5bb081d51ab82340948874
 
-**base librewolf version**: 95.x
+**base goonfox version**: 95.x
 
 **References**:
-- [review webrtc](https://gitlab.com/librewolf-community/settings/-/issues/108).
-- [stop disabling geo api](https://gitlab.com/librewolf-community/settings/-/issues/102).
-- [deprecate RFP dark mode](https://gitlab.com/librewolf-community/browser/common/-/issues/56).
+- [review webrtc](https://gitlab.com/goonfox-community/settings/-/issues/108).
+- [stop disabling geo api](https://gitlab.com/goonfox-community/settings/-/issues/102).
+- [deprecate RFP dark mode](https://gitlab.com/goonfox-community/browser/common/-/issues/56).
 - `offlineApps` change in 3.1 did not respect exceptions, so revert it.
-- uncomment prefs to enable CRL without OCSP fallback, although they will fully work only when [this issue is closed](https://gitlab.com/librewolf-community/browser/common/-/issues/57).
-- we decided to force a larger new window size by default, to improve usability for RFP users while still keeping a rounded value. see [this comment](https://gitlab.com/librewolf-community/settings/-/issues/104#note_752186737).
+- uncomment prefs to enable CRL without OCSP fallback, although they will fully work only when [this issue is closed](https://gitlab.com/goonfox-community/browser/common/-/issues/57).
+- we decided to force a larger new window size by default, to improve usability for RFP users while still keeping a rounded value. see [this comment](https://gitlab.com/goonfox-community/settings/-/issues/104#note_752186737).
 
 #### Added preferences
 ```
@@ -688,7 +688,7 @@ defaultPref("security.pki.crlite_mode", 2);
 
 **target commit**: 19e59813ed483de7ffc8a219da96eb18a942eb01
 
-**base librewolf version**: 94.x
+**base goonfox version**: 94.x
 
 **References**:
 - block the new firefox suggests feature in full.
@@ -713,7 +713,7 @@ lockPref("browser.urlbar.quicksuggest.scenario", "history"); // prevent opt-in, 
 
 **target commit**: 6844d4ad1c9ad8bb3ffdc29e0a607c21c0559da4 and 67e6a00b719ecd52782a724cd09a9f08fa4577c0
 
-**base librewolf version**: 94.x
+**base goonfox version**: 94.x
 
 **References**:
 - the added prefs are all defense in depth.
@@ -739,20 +739,20 @@ defaultPref("browser.tabs.drawInTitlebar", true); // bring back to default
 #### Changed preferences
 ```
 defaultPref("privacy.clearOnShutdown.offlineApps", true); // can be cleared
-defaultPref("app.support.baseURL", "https://librewolf.net/docs/faq/#");
-defaultPref("browser.search.searchEnginesURL", "https://librewolf.net/docs/faq/#how-do-i-add-a-search-engine");
-defaultPref("browser.geolocation.warning.infoURL", "https://librewolf.net/docs/faq/#how-do-i-enable-location-aware-browsing");
-defaultPref("app.feedback.baseURL", "https://librewolf.net/#questions");
+defaultPref("app.support.baseURL", "https://goonfox.net/docs/faq/#");
+defaultPref("browser.search.searchEnginesURL", "https://goonfox.net/docs/faq/#how-do-i-add-a-search-engine");
+defaultPref("browser.geolocation.warning.infoURL", "https://goonfox.net/docs/faq/#how-do-i-enable-location-aware-browsing");
+defaultPref("app.feedback.baseURL", "https://goonfox.net/#questions");
 ```
 
 ## 3.0
 
 **target commit**: f0a2d5d70657cc87348282d6faaf72edff8bf304 and 4e0895a299ec99066f119d8ce1a2923fc91aa465
 
-**base librewolf version**: 94.x
+**base goonfox version**: 94.x
 
 **References**:
-- as reported in #95 and discussed [here](https://gitlab.com/librewolf-community/browser/linux/-/issues/246) we are re-enabling TP by default, setting it to strict.
+- as reported in #95 and discussed [here](https://gitlab.com/goonfox-community/browser/linux/-/issues/246) we are re-enabling TP by default, setting it to strict.
 - the sponsored shortcuts in about:preferences#home were already locked, now they are properly hidden.
 - enable fission as it is being [rolled out to stable](https://bugzilla.mozilla.org/show_bug.cgi?id=1732206).
 
@@ -787,7 +787,7 @@ pref("browser.contentblocking.category", "strict");
 
 **target commit**: from 6451faa167568313e5ed065fcb3ee2bb76132063 to b17a1ed657e22ac61b4399699223d36724b842e7
 
-**base librewolf version**: 92.x
+**base goonfox version**: 92.x
 
 **References**:
 - [web content can no longer access the battery api](https://bugzilla.mozilla.org/show_bug.cgi?id=1313580).
@@ -800,7 +800,7 @@ pref("browser.contentblocking.category", "strict");
 - `extensions.getAddons.link.url"` is showed only when no extension is installed and it's not a bad suggestion to get addons from addons.mozilla.org so we can remove it.
 - `browser.safebrowsing.downloads.remote.*` are all controlled by the prefs already in the .cfg, which is the same approach taken by tor browser.
 - graphite [is no longer as concerning](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox+graphite) and blocking it is likely fingerprintable.
-- the pdf prefs and the bookmark backup are not really relevant to librewolf.
+- the pdf prefs and the bookmark backup are not really relevant to goonfox.
 - as reported [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1606624) the shared memory pref is no longer needed, so we can switch it back to default.
 - new tab page section now includes a new design and no longer an empty page. all the unnecessary preferences have been removed and users can also customize as the most essential ones have been unlocked.
 - UI bug in tracking protection section is fixed.
@@ -809,7 +809,7 @@ pref("browser.contentblocking.category", "strict");
 - disable new firefox suggests feature
 
 **Notes**
-Recent changes in the category `MISC > set librewolf support and releases urls` require to create a couple header for the landing page.
+Recent changes in the category `MISC > set goonfox support and releases urls` require to create a couple header for the landing page.
 
 #### Removed preferences
 ```
@@ -916,11 +916,11 @@ pref("browser.urlbar.quicksuggest.scenario", ""); // disable firefox suggests an
 previously empty, set to proper value
 ```
 defaultPref("network.trr.confirmationNS", "skip");
-defaultPref("browser.search.searchEnginesURL", "https://gitlab.com/librewolf-community/settings/-/wikis/support#search");
-defaultPref("browser.geolocation.warning.infoURL", "https://gitlab.com/librewolf-community/settings/-/wikis/support#location");
-defaultPref("app.feedback.baseURL", "https://gitlab.com/librewolf-community/settings/-/wikis/support");
-defaultPref("app.releaseNotesURL", "https://gitlab.com/librewolf-community/browser");
-defaultPref("app.releaseNotesURL.aboutDialog", "https://gitlab.com/librewolf-community/browser");
+defaultPref("browser.search.searchEnginesURL", "https://gitlab.com/goonfox-community/settings/-/wikis/support#search");
+defaultPref("browser.geolocation.warning.infoURL", "https://gitlab.com/goonfox-community/settings/-/wikis/support#location");
+defaultPref("app.feedback.baseURL", "https://gitlab.com/goonfox-community/settings/-/wikis/support");
+defaultPref("app.releaseNotesURL", "https://gitlab.com/goonfox-community/browser");
+defaultPref("app.releaseNotesURL.aboutDialog", "https://gitlab.com/goonfox-community/browser");
 ```
 
 #### Unlocked preferences
@@ -947,8 +947,8 @@ defaultPref("browser.shell.checkDefaultBrowser", false);
 defaultPref("middlemouse.contentLoadURL", false);
 defaultPref("browser.pagethumbnails.capturing_disabled", true);
 defaultPref("browser.privatebrowsing.forceMediaMemoryCache", true);
-defaultPref("app.update.url.details", "https://gitlab.com/librewolf-community/browser");
-defaultPref("app.update.url.manual", "https://gitlab.com/librewolf-community/browser");
+defaultPref("app.update.url.details", "https://gitlab.com/goonfox-community/browser");
+defaultPref("app.update.url.manual", "https://gitlab.com/goonfox-community/browser");
 defaultPref("network.protocol-handler.external.ms-windows-store", false);
 defaultPref("browser.newtab.preload", false);
 defaultPref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false);
@@ -961,7 +961,7 @@ defaultPref("browser.safebrowsing.downloads.enabled", false);
 
 **target commit**: 192f51abe21e9aeb9b01d396079e9b8533cab7bb
 
-**base librewolf version**: 91.x
+**base goonfox version**: 91.x
 
 **References**:
 - [reasoning on webgl2](https://github.com/arkenfox/user.js/commit/41c3c0ec26ef4392169fa1d04fd5783ac03bfc8e) from arkenfox's maintainer, basically disabling webgl is enough for those who don't need it. users who want it have one less pref to change.
@@ -977,7 +977,7 @@ lockPref("browser.newtabpage.activity-stream.feeds.section.highlights", false); 
 
 **target commit**: 23d1bff4f4ae3456df8e50e67f657ea6288eef29
 
-**base librewolf version**: 91.x
+**base goonfox version**: 91.x
 
 **References**:
 - [comment](https://github.com/arkenfox/user.js/commit/3bb9fc713f141d794fc4adfb38d3fcf86c9307ab#commitcomment-53916786) from arkenfox's maintainer regarding tls version pref
@@ -1004,7 +1004,7 @@ defaultPref("security.tls.version.enable-deprecated", false); // default but hel
 ## 1.4
 **target commit**: 2e21db4c3018321a077d9af2ec44b29675c57adf
 
-**base librewolf version**: 90.x
+**base goonfox version**: 90.x
 
 #### Removed preferences
 ```
@@ -1014,7 +1014,7 @@ lockPref("security.tls.version.enable-deprecated", false); // default
 ## 1.3
 **target commit**: 60e75e30c6018a5c909a2f00f40831ed3f1948a6
 
-**base librewolf version**: 90.x
+**base goonfox version**: 90.x
 
 #### Added preferences
 ```
@@ -1029,11 +1029,11 @@ lockPref("browser.cache.offline.storage.enable", false); // pref does not exist 
 ## 1.2
 **target commit**: 294724fae38ffa4ebcf6dfb0854787fb7022d1e6
 
-**base librewolf version**: 89.x
+**base goonfox version**: 89.x
 
 **References**:
-- issue [#65](https://gitlab.com/librewolf-community/settings/-/issues/65) from settings
-- issue [#22](https://gitlab.com/librewolf-community/browser/common/-/issues/22) from common
+- issue [#65](https://gitlab.com/goonfox-community/settings/-/issues/65) from settings
+- issue [#22](https://gitlab.com/goonfox-community/browser/common/-/issues/22) from common
 
 #### Removed preferences
 ```
@@ -1043,17 +1043,17 @@ defaultPref("media.navigator.enabled", false);
 
 #### Changed preferences
 ```
-defaultPref("app.support.baseURL", "https://gitlab.com/librewolf-community/settings/-/wikis/support#");
+defaultPref("app.support.baseURL", "https://gitlab.com/goonfox-community/settings/-/wikis/support#");
 ```
 
 ## 1.1
 **target commit**: cf0a2cc88acdbc51b138228353a0d7c9ea0db7c3
 
-**base librewolf version**: 89.x
+**base goonfox version**: 89.x
 
 **References**:
-- issue [#54](https://gitlab.com/librewolf-community/settings/-/issues/54) from settings
-- merge request [#5](https://gitlab.com/librewolf-community/browser/common/-/merge_requests/5) from common
+- issue [#54](https://gitlab.com/goonfox-community/settings/-/issues/54) from settings
+- merge request [#5](https://gitlab.com/goonfox-community/browser/common/-/merge_requests/5) from common
 
 #### Removed preferences
 ```
@@ -1077,7 +1077,7 @@ lockPref("privacy.override_rfp_for_color_scheme", false);
 ## 1.0
 **target commit**: 2b8dc4ac6d7fb6fdf8f172d04c27912098268257
 
-**base librewolf version**: 89.x
+**base goonfox version**: 89.x
 
 This is the initial release from which we start tagging and versioning settings. For previous changes see
-[here](https://gitlab.com/librewolf-community/settings/-/blob/master/docs/changelog-legacy.md).
+[here](https://gitlab.com/goonfox-community/settings/-/blob/master/docs/changelog-legacy.md).

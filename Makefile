@@ -1,5 +1,5 @@
 .PHONY : all
 
 all :
-	sudo cp librewolf.cfg /usr/lib/librewolf/librewolf.cfg
+	sudo cp goonfox.cfg /usr/lib/goonfox/goonfox.cfg
 

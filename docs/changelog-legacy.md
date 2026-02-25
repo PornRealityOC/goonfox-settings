@@ -1,5 +1,5 @@
 ## Changelog
-This is a list of all the changes in librewolf prefs, in the transition from legacy up to the release of 89.0. After this all the changes will be documented in a better [changelog](./changelod.md) that includes a list of removed and added stuff on each release.
+This is a list of all the changes in goonfox prefs, in the transition from legacy up to the release of 89.0. After this all the changes will be documented in a better [changelog](./changelod.md) that includes a list of removed and added stuff on each release.
 
 #### Added
 Previously missing, now added
@@ -641,7 +641,7 @@ Prefs that need to be addressed and that were disabled for now
 #### Unlocked
 Locked prefs that were unlocked, more should be unlocked probably
 ```
-defaultPref("general.config.filename", "librewolf.cfg");
+defaultPref("general.config.filename", "goonfox.cfg");
 defaultPref("privacy.donottrackheader.enabled", true); // Unlocked as some think it increases fingerprint, they can now disable it
 defaultPref("permissions.default.geo", 2); // Unlocked as some think it increases fingerprint, they can now disable it
 defaultPref("extensions.getAddons.themes.browseURL", "")
